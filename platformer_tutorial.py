@@ -6,8 +6,11 @@ import random
 pygame.init()
 vec = pygame.math.Vector2
 
+# Screen dimensions (px)
 HEIGHT = 450
 WIDTH = 400
+
+# Player acceleration, friction on surfaces, and game frames per second
 ACC = 0.5 
 FRIC = -0.12
 FPS = 60
@@ -19,6 +22,7 @@ pygame.display.set_caption("Game")
 
 # Classes
 
+# Player class as a red square
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
